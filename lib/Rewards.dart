@@ -502,6 +502,7 @@ class Rewards extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: 20),
                 ],
               ),
             ),
