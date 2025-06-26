@@ -220,46 +220,7 @@ class Home extends StatelessWidget {
           ),
 
           // Bottom Navigation
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 8,
-                  offset: Offset(0, -2),
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _bottomNavItem(Icons.home, "UPI"),
-                _bottomNavItem(Icons.credit_card, "Card"),
-                _bottomNavItem(Icons.add_box_outlined, "FD"),
-                _bottomNavItem(Icons.gif_box, "Rewards"),
-                _bottomNavItem(Icons.blinds_closed, "History"),
-              ],
-            ),
-          ),
         ],
-      ),
-    );
-  }
-
-  Widget _bottomNavItem(IconData icon, String label) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
-      child: SizedBox(
-        width: 50,
-        height: 50,
-        child: Column(
-          children: [
-            Icon(icon, color: Colors.blueGrey),
-            Text(label, style: TextStyle(color: Colors.blueGrey, fontSize: 12)),
-          ],
-        ),
       ),
     );
   }
