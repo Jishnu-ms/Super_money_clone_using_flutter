@@ -63,7 +63,7 @@ class _MainScreenState extends State<MainScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             _buildNavItem(Icons.home, "UPI", 0),
-            _buildNavItem(Icons.credit_card, "Car", 1),
+            _buildNavItem(Icons.credit_card, "Card", 1),
             _buildNavItem(Icons.add_box_outlined, "FD", 2),
             _buildNavItem(Icons.gif_box, "Rewards", 3),
             _buildNavItem(Icons.blinds_closed, "History", 4),
