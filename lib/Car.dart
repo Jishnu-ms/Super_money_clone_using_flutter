@@ -16,9 +16,9 @@ class Car extends StatelessWidget {
           SliverAppBar(
             automaticallyImplyLeading: false, // Removes the back button
 
-            backgroundColor: Colors.deepPurple,
             expandedHeight: 330,
             toolbarHeight: 120,
+            backgroundColor: Colors.deepPurple,
             pinned: true,
             elevation: 0,
             title: Row(
@@ -45,11 +45,18 @@ class Car extends StatelessWidget {
               background: Stack(
                 children: [
                   // Curved background
-                  ClipPath(
-                    clipper: ArchClipper(),
-                    child: Container(color: Colors.deepPurple),
+                  ClipPath(clipper: ArchClipper()),
+                  Container(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/10.jpg',
+                        fit: BoxFit.fill,
+                        height: 600,
+                        width: double.infinity,
+                      ),
+                    ),
                   ),
-
                   // Cashback container – only visible when expanded
                   Positioned(
                     bottom: 20,
@@ -97,7 +104,7 @@ class Car extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: .0),
                   child: Container(
-                    height: 50,
+                    height: 20,
                     margin: EdgeInsets.only(bottom: 0), // aligns with curve
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -120,67 +127,13 @@ class Car extends StatelessWidget {
                 child: Stack(
                   children: [
                     Container(
-                      height: 90,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        borderRadius: BorderRadius.circular(15),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
-                            blurRadius: 10,
-                            offset: Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "100% cashback",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5,
-                        ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset('assets/6.jpg', fit: BoxFit.fill),
                       ),
                     ),
 
                     // Simulated confetti
-                    Positioned(
-                      top: 10,
-                      left: 20,
-                      child: Icon(
-                        Icons.star,
-                        color: Colors.amberAccent,
-                        size: 16,
-                      ),
-                    ),
-                    Positioned(
-                      top: 20,
-                      right: 30,
-                      child: Icon(
-                        Icons.circle,
-                        color: Colors.pinkAccent,
-                        size: 12,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 15,
-                      left: 40,
-                      child: Icon(
-                        Icons.star_border,
-                        color: Colors.lightBlueAccent,
-                        size: 18,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      right: 10,
-                      child: Icon(
-                        Icons.circle,
-                        color: Colors.greenAccent,
-                        size: 10,
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -374,66 +327,11 @@ class Car extends StatelessWidget {
                 ),
                 child: Stack(
                   children: [
-                    Container(
-                      height: 90,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        borderRadius: BorderRadius.circular(15),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
-                            blurRadius: 10,
-                            offset: Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Lifetime FREE",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5,
-                        ),
-                      ),
-                    ),
-
                     // Simulated confetti
-                    Positioned(
-                      top: 10,
-                      left: 20,
-                      child: Icon(
-                        Icons.star,
-                        color: Colors.amberAccent,
-                        size: 16,
-                      ),
-                    ),
-                    Positioned(
-                      top: 20,
-                      right: 30,
-                      child: Icon(
-                        Icons.circle,
-                        color: Colors.pinkAccent,
-                        size: 12,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 15,
-                      left: 40,
-                      child: Icon(
-                        Icons.star_border,
-                        color: Colors.lightBlueAccent,
-                        size: 18,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      right: 10,
-                      child: Icon(
-                        Icons.circle,
-                        color: Colors.greenAccent,
-                        size: 10,
+                    Container(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset('assets/6.jpg', fit: BoxFit.fill),
                       ),
                     ),
                   ],

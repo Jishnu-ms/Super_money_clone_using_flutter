@@ -187,8 +187,13 @@ class Home extends StatelessWidget {
                                 children: [
                                   SizedBox(height: 10),
                                   Container(
-                                    padding: EdgeInsets.all(8),
-                                    height: 90,
+                                    padding: EdgeInsets.only(
+                                      top: 8,
+                                      left: 8,
+                                      right: 8,
+                                    ),
+
+                                    height: 185,
                                     width: 190,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(20),
@@ -211,13 +216,22 @@ class Home extends StatelessWidget {
                                             color: Colors.blueGrey,
                                           ),
                                         ),
+                                        //SizedBox(height: 15),
+                                        Container(
+                                          height: 110,
+                                          width: double.infinity,
+                                          child: Image.asset(
+                                            'assets/2.jpg',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ),
                                 ],
                               ),
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 20),
                             Container(
                               padding: EdgeInsets.all(8),
                               height: 62,
@@ -238,20 +252,36 @@ class Home extends StatelessWidget {
                                 ),
                               ),
 
-                              child: Column(
+                              child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+
                                 children: [
-                                  Text(
-                                    "Credit score",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        "Credit score",
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Check for free",
+                                        style: TextStyle(
+                                          color: Colors.blueGrey,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  Text(
-                                    "Check for free",
-                                    style: TextStyle(color: Colors.blueGrey),
+
+                                  Container(
+                                    child: Image.asset(
+                                      'assets/12.jpg',
+                                      height: 50,
+                                      width: 73,
+                                      fit: BoxFit.fill,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -265,7 +295,7 @@ class Home extends StatelessWidget {
                           children: [
                             Container(
                               padding: EdgeInsets.all(8),
-                              height: 130,
+                              height: 140,
                               width: 128,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -284,8 +314,21 @@ class Home extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
+                                  Container(
+                                    height: 50,
+                                    width: 50,
+                                    child: Image.asset('assets/4.jpg'),
+                                  ),
                                   Text(
                                     "Recharges",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "& Bills",
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 18,
@@ -321,6 +364,11 @@ class Home extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
+                                  Container(
+                                    height: 50,
+                                    width: 50,
+                                    child: Image.asset('assets/5.jpg'),
+                                  ),
                                   Text(
                                     "superFD",
                                     style: TextStyle(
@@ -345,9 +393,10 @@ class Home extends StatelessWidget {
 
                   // Full-width Block
                   Container(
-                    height: 300,
+                    height: 500,
                     width: double.infinity,
                     color: Colors.deepPurple,
+                    child: Image.asset('assets/1.jpg', fit: BoxFit.cover),
                   ),
 
                   SizedBox(height: 20),
@@ -396,6 +445,13 @@ class Home extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
+                              Container(
+                                child: Image.asset(
+                                  height: 125,
+                                  'assets/7.jpg',
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
                               Text(
                                 "Get 9.10% interest",
                                 style: TextStyle(
@@ -453,6 +509,13 @@ class Home extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
+                              Container(
+                                child: Image.asset(
+                                  'assets/3.jpg',
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              SizedBox(height: 20),
                               Text(
                                 "Check your credit",
                                 style: TextStyle(
@@ -505,8 +568,9 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(height: 20),
                   Container(
-                    height: 100,
+                    height: 125,
                     width: 300,
                     padding: EdgeInsets.all(16),
 
@@ -529,24 +593,18 @@ class Home extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(width: 22),
                             Container(
-                              width: 40,
-                              height: 40,
-                              decoration: BoxDecoration(
-                                color: Colors.deepPurpleAccent,
-                                borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                'assets/8.jpg',
+                                height: 90,
+                                width: 100,
                               ),
-                              child: Icon(
-                                Icons.shield,
-                                color: Colors.white,
-                                size: 34,
-                              ), // optional icon
                             ),
                             SizedBox(width: 12), // spacing between box and text
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                SizedBox(height: 20),
                                 Text(
                                   "Watch and learn about",
                                   style: TextStyle(color: Colors.blueGrey),

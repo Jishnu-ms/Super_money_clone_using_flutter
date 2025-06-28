@@ -42,19 +42,18 @@ class Fd extends StatelessWidget {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   // Promo Section
                   Container(
-                    height: 200,
-                    color: Colors.green,
-                    child: Center(
-                      child: Text(
-                        "Picture Section",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/11.jpg',
+                        fit: BoxFit.fill,
+                        height: 200,
+                        width: 200,
                       ),
                     ),
                   ),

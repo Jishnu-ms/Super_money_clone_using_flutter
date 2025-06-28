@@ -83,11 +83,9 @@ class History extends StatelessWidget {
 
                   // Promo Section
                   Container(
-                    width: 300,
-                    height: 100,
-                    decoration: BoxDecoration(
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.purple,
+                      child: Image.asset('assets/9.jpg', fit: BoxFit.fill),
                     ),
                   ),
                   SizedBox(height: 30),
