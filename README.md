@@ -1,18 +1,14 @@
 # 💸 SuperMoney Clone
 A responsive and feature-rich clone of the SuperMoney.com platform. Built with modern UI, calculators, and product comparison functionality for financial products like loans, credit cards, and insurance.
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://your-live-demo-link.com) [![Stars](https://img.shields.io/github/stars/yourusername/supermoney-clone?style=for-the-badge)](https://github.com/yourusername/supermoney-clone) [![Author](https://img.shields.io/badge/Author-Jishnu-blue?style=for-the-badge)](https://github.com/yourusername)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://your-live-demo-link.com)
+[![Stars](https://img.shields.io/github/stars/yourusername/supermoney-clone?style=for-the-badge)](https://github.com/yourusername/supermoney-clone) 
+[![Author](https://img.shields.io/badge/Author-Jishnu-blue?style=for-the-badge)](https://github.com/yourusername)
 
-## 📸 Preview
-![App Preview](https://your-demo-image-or-gif-link.com)
+
 
 ## 🚀 Features
-- 🔍 Financial product search & comparison
-- 📊 EMI / Loan calculator (Dynamic + Backend support)
 - 📱 Fully responsive across devices
 - 🎨 Clean modern UI mimicking SuperMoney
-- 🧾 Review sections and product details
-- ⚙️ Backend integration with FastAPI for real-time calculations
-- 🔒 Optional login and user management (Firebase or custom)
 
 ## 🛠 Tech Stack
 | Layer        | Technology                      |
