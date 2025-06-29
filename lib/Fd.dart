@@ -51,7 +51,7 @@ class Fd extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       child: Image.asset(
                         'assets/11.jpg',
-                        fit: BoxFit.fill,
+                        fit: BoxFit.cover, // Changed from fill to cover
                         height: 200,
                         width: 200,
                       ),

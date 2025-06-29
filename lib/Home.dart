@@ -220,6 +220,12 @@ class Home extends StatelessWidget {
                                         Container(
                                           height: 110,
                                           width: double.infinity,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                              16,
+                                            ), // You can tweak the roundness
+                                          ),
+                                          clipBehavior: Clip.antiAlias,
                                           child: Image.asset(
                                             'assets/2.jpg',
                                             fit: BoxFit.cover,
@@ -276,11 +282,18 @@ class Home extends StatelessWidget {
                                   ),
 
                                   Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                        12,
+                                      ), // smooth corners
+                                    ),
+                                    clipBehavior: Clip.antiAlias,
                                     child: Image.asset(
                                       'assets/12.jpg',
                                       height: 50,
                                       width: 73,
-                                      fit: BoxFit.fill,
+                                      fit: BoxFit
+                                          .cover, // better blending than fill
                                     ),
                                   ),
                                 ],
@@ -317,7 +330,14 @@ class Home extends StatelessWidget {
                                   Container(
                                     height: 50,
                                     width: 50,
-                                    child: Image.asset('assets/4.jpg'),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    clipBehavior: Clip.antiAlias,
+                                    child: Image.asset(
+                                      'assets/4.jpg',
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                   Text(
                                     "Recharges",
@@ -367,7 +387,18 @@ class Home extends StatelessWidget {
                                   Container(
                                     height: 50,
                                     width: 50,
-                                    child: Image.asset('assets/5.jpg'),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                        12,
+                                      ), // Adjust radius if needed
+                                    ),
+                                    clipBehavior: Clip
+                                        .antiAlias, // Enables clipping with rounded corners
+                                    child: Image.asset(
+                                      'assets/5.jpg',
+                                      fit: BoxFit
+                                          .cover, // Ensures image covers the container cleanly
+                                    ),
                                   ),
                                   Text(
                                     "superFD",
