@@ -1,7 +1,6 @@
 # 💸 SuperMoney Clone
-A responsive and feature-rich clone of the SuperMoney.com platform. Built with modern UI, calculators, and product comparison functionality for financial products like loans, credit cards, and insurance.
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://your-live-demo-link.com)
-[![Stars](https://img.shields.io/github/stars/yourusername/supermoney-clone?style=for-the-badge)](https://github.com/yourusername/supermoney-clone) 
+A responsive and feature-rich clone of the SuperMoney.com platform. Built with modern UI and Designs.
+
 [![Author](https://img.shields.io/badge/Author-Jishnu-blue?style=for-the-badge)](https://github.com/yourusername)
 
 
