@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "super-money-f2487",
+    "test": "super-money-f2487"
+  },
+  "targets": {},
+  "etags": {}
+}
